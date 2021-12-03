@@ -30,7 +30,7 @@ public class Main {
 
     while (!response.equals("q")) {
       System.out.println(
-        "Enter p for play; s for stop; r for reset; t to change songs; q for quit;"
+        "Enter p for play; s for stop; r for reset; c to change songs; q for quit;"
       );
 
       response = scanner.next();
@@ -63,7 +63,7 @@ public class Main {
           }
           clip.close();
           break;
-        case "t":
+        case "c":
           if (clip.isRunning()) {
             clip.stop();
           }
