@@ -38,6 +38,10 @@ public class MusicPlayer {
 
             switch (response) {
                 case 'p':
+                    if (clip.getMicrosecondLength() > 0 && !clip.isRunning()) {
+                        clip.setMicrosecondPosition(0);
+                        clip.start();
+                    }
                     if (!clip.isRunning()) {
                         System.out.println("Now playing..." + filename);
                         clip.start();
