@@ -7,9 +7,7 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
-
         var musicPlayer = new MusicPlayer();
         musicPlayer.startPlayer();
-
     }
 }
